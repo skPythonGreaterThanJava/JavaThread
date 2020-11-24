@@ -15,7 +15,10 @@ public class JavaThread {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        Process T1 = new Process("T1");
+        Process T2 = new Process("T2");
+        T1.start();
+        T2.start();
     }
     
 }
